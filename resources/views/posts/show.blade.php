@@ -9,7 +9,7 @@
     {!! $post->body !!}
 <hr>
 @if (Auth::check())
-    @if ($post->user_id === Auth::user()->id)
+    @if ($post->user_id == Auth::user()->id)
     <div id="del-edit-panel">
             <a href="/edit/{{$post->id}}" class="btn btn-primary" id="edit-button">Edit</a>
             

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -30,9 +30,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/create">Create Post</a>
-                </li>
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="/create">Create Post</a>
+                    </li>
+                @endauth
             </ul>
             <ul class="navbar-nav ml-auto">
                     @if (Auth::check())

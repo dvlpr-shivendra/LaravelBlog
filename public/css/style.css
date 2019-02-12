@@ -4,10 +4,6 @@ body{
     min-height: 100%;
 }
 
-nav {
-    border-bottom: 3px solid royalblue;
-}
-
 #post-content {
     display: grid;
     align-items: center;
