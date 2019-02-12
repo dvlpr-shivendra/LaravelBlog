@@ -30,9 +30,3 @@ Follow these steps:
 - Configure your database credentials in the .env which is present in the projects's root directory.
 -Execute command - php artisan migrate
 - Finally execute command php artisan serve and visit http://localhost:8000 in the web browser.
-
-
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Elpis, please send an e-mail to Shivendra TechSter via [shivendratechster@gmail.com](mailto:shivendratechster@gmail.com).
